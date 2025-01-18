@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      footer {
+        background-color: #242222;
+      }
+      .footerContainer {
+        width: 100%;
+        padding: 70px 30px 20px;
+      }
+      .socialIcons {
+        display: flex;
+        justify-content: center;
+      }
+      .socialIcons a {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px; 
+        height: 50px; 
+        background-color: white;
+        margin: 10px;
+        border-radius: 50%;
+      }
+      .socialIcons a i {
+        font-size: 1.7em;
+        color: #242222;
+        opacity: 0.9;
+      }
+      /* Hover effect on social media icon */
+      .socialIcons a:hover {
+        background-color: black;
+        transition: 0.5s;
+      }
+      .socialIcons a:hover i {
+        color: white;
+        transition: 0.5s;
+      }
+      .footerNav {
+        margin: 30px 0;
+        
+      }
+      .footerNav ul {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+      }
+      .footerNav ul li a {
+        color: white;
+        margin: 20px;
+        text-decoration: none;
+        font-size: 1.1em;
+        opacity: 0.7;
+        transition: 0.5s;
+      }
+      .footerNav ul li a:hover {
+        opacity: 1;
+      }
+      .footerBottom {
+        background-color: #242222;
+        padding: 20px;
+        text-align: center;
+      }
+      .footerBottom p {
+        color: white;
+      }
+      .designer {
+        opacity: 0.7;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 400;
+        margin: 0px 5px;
+      }
+      @media (max-width: 700px) {
+        .footerNav ul {
+          flex-direction: column;
+        }
+        .footerNav ul li {
+          width: 100%;
+          text-align: center;
+          margin: 10px;
+        }
+        .socialIcons a {
+          width: 40px; 
+          height: 40px; 
+          padding: 8px;
+          margin: 4px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <footer>
+    
+      <div class="footerContainer">
+        <div class="socialIcons">
+          <a href="www.linkedin.com/in/aniket-amte-8a4357283"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://www.facebook.com/jay.chinche"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://www.instagram.com/mr_amte_04/"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://www.youtube.com/channel/UCm2aagQI_VeEZGW84djz0iQ"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+          <a href="https://x.com/chinche1421">
+            <i class="fa-brands fa-twitter"></i>
+        </a>
+        </div>
+        <div class="footerNav">
+          <ul>
+            <li><a href="/listings">Home</a></li>
+            <li><a href="/listings">Privacy</a></li>
+            <li><a href="/listings">Company details</a></li>
+          </ul>
+        </div>
+      </div>
+  
+     
+      <div class="footerBottom">
+        <p>&copy;AmteProperty Private limited <span class="designer"></span></p>
+      </div>
+    </footer>
+  </body>
+</html>

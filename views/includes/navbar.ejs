@@ -1,0 +1,77 @@
+<style>
+  .search-btn {
+    background-color: #fe424d;
+    color: #fff;
+    border-radius: 25px;
+    padding: 0 1rem 0 1rem;
+  }
+  .search-btn.btn-search:hover {
+    background-color: #fe424d;
+    color: #fff;
+  }
+  .search-btn i {
+    display: inline;
+    margin-left: 0.5rem;
+  }
+  .search-inp {
+    border-radius: 25px;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+    font-size: 0.9rem;
+  }
+  .d-flex {
+    background-color: white;
+  }
+
+  
+</style>
+<nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/"><i class="fa-regular fa-compass"></i></a>
+    <h4 style="color: #fe424d; font-family: 'Plus Jakarta Sans', sans-serif !important;">WanderLust</h4>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav"></div>
+
+      <div class="navbar-nav ms-auto">
+        <nav class="navbar bg-body">
+          <div class="container-fluid">
+            <form class="d-flex" role="search" action="/showsearch" method="GET" class="needs-validation" novalidate>
+              <input
+                class="form-control input me-2 search-inp"
+                type="search"
+                placeholder="Search Dest"
+                id="myInput" 
+                name="searchQuery" 
+              />
+              <button class="btn search-btn search" type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i
+                >Search</a>
+              </button>
+            </form>
+            <a class="nav-link visible" href="/listings/new">Rent your home</a>
+            <%if(!currUser){%>
+            <a class="nav-link visible" href="/signup"><b>Sign up</b></a>
+            <a class="nav-link visible" href="/login"><b>Log in</b></a>
+            <%}%> <%if(currUser){%>
+            <a class="nav-link visible" href="/logout">Log out</a>
+            <%}%>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
